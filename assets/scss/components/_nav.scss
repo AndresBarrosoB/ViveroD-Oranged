@@ -1,0 +1,40 @@
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        &__button {
+            width: 25%;
+            height: 40px;
+            font-size: 20px;
+            background-color: $lightOrange;
+            border-color: $darkOrange;
+            font-weight: bold;
+            color: $darkGreen;
+            &:hover {
+                background-color: $darkOrange;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@include mq(746px) {
+    .header {
+        &__nav {
+            flex-wrap: wrap;
+            &__button {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@include mq(576px) {
+    .header {
+        &__nav {
+            flex-direction: column;
+            &__button {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.footer {
+    z-index: 1;
+    height: 100px;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: center;
+    &__ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+}

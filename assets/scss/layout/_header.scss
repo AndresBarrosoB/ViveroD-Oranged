@@ -1,0 +1,24 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    &__section {
+        display: flex;
+        justify-content: space-around;
+        background-color: $black;
+        color: $white;
+        text-align: center;
+        align-items: center;
+        &__img {
+            width: 15%;
+            height: auto;
+        }
+        &__span {
+            width: 70%;
+            height: auto;
+            &__h1 {
+                font-size: 300%;
+            }
+        }
+    }
+}
